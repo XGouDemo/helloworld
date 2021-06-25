@@ -1,20 +1,20 @@
-package main1
+package main
 
 import "fmt"
 
-type Human struct {
+type Humana struct {
 	Name       string
 	Body       string
-	Love       *Human
+	Love       *Humana
 	Job        string
 	Aspiration string
 }
 
-func main() {
-	var tom Human
+func main5() {
+	var tom Humana
 
-	jerry := &Human{"Jerry", "building", &tom, "developer", "reading"}
-	tom = Human{"Tom", "building", jerry, "developer", "reading"}
+	jerry := &Humana{"Jerry", "building", &tom, "developer", "reading"}
+	tom = Humana{"Tom", "building", jerry, "developer", "reading"}
 
 	fmt.Println(jerry)
 	fmt.Println(tom)

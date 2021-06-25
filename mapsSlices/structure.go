@@ -1,4 +1,4 @@
-package main4
+package main
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ type Human struct {
 	Love       string
 }
 
-func main() {
+func main6() {
 
 	jerry := Human{
 		Job:        "SAP Employee",

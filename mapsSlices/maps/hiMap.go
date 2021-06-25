@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func main4() {
 	lookup := make(map[string]int)
 	lookup["goku"] = 9001
 	power, exists := lookup["vegeta"]

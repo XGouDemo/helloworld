@@ -1,7 +1,7 @@
 package main
 
 import (
-	"interface/impl"
+	"helloworld/interface/impl"
 )
 
 func main() {

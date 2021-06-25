@@ -1,8 +1,8 @@
 package main
 
 import (
-	types "error/declaration"
 	"fmt"
+	types "helloworld/error/declaration"
 	"io"
 	"strconv"
 )

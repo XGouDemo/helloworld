@@ -1,24 +1,24 @@
-package main2
+package main
 
 import (
 	"fmt"
 	"strconv"
 )
 
-type Human struct {
+type Humanb struct {
 	Name       string
 	Body       string
 	Job        string
 	Aspiration string
-	Love       *Human
+	Love       *Humanb
 }
 
 type Smarty struct {
-	*Human
+	*Humanb
 	Level int
 }
 
-func (human *Human) print() string {
+func (human *Humanb) print() string {
 	var outputStr = "\nHi, I am " + human.Name + ".\nI am proud of my " + human.Body + " shape.\nI am currently a " + human.Job + " and I really love " + human.Aspiration
 
 	if human.Love != nil {
@@ -29,7 +29,7 @@ func (human *Human) print() string {
 
 }
 func (smarty *Smarty) print() string {
-	var outputStr = smarty.Human.print()
+	var outputStr = smarty.Humanb.print()
 	outputStr = outputStr + "\nI am a level " + strconv.Itoa(smarty.Level) + " smarty!"
 
 	return outputStr
@@ -37,7 +37,7 @@ func (smarty *Smarty) print() string {
 
 func main() {
 
-	dummy := &Human{
+	dummy := &Humanb{
 		Name:       "Wang Li Hong",
 		Body:       "Built",
 		Job:        "Actor",
@@ -46,7 +46,7 @@ func main() {
 	}
 
 	prettySmart := &Smarty{
-		&Human{
+		&Humanb{
 			"Zhang Bo Zhi",
 			"Slim",
 			"Actress",

@@ -2,8 +2,8 @@ package main
 
 import (
 	//package name "relative file path"
-	secretUtil "visibility/hidden"
-	util "visibility/visible"
+	secretUtil "helloworld/visibility/hidden"
+	util "helloworld/visibility/visible"
 )
 
 func main() {

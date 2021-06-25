@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"shopping"
+	"helloworld/shopping"
 )
 
 //main.go:5:2: package shopping is not in GOROOT (C:\Program Files\Go\src\shopping)

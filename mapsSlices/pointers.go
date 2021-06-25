@@ -1,8 +1,8 @@
-package main3
+package main
 
 import "fmt"
 
-type Human struct {
+type Humanc struct {
 	Name       string
 	Body       string
 	Love       string
@@ -10,10 +10,10 @@ type Human struct {
 	Aspiration string
 }
 
-func main() {
-	jerry := &Human{"Jerry", "building", "wife", "developer", "reading"}
-	tom := Human{"Tom", "building", "wife", "developer", "reading"}
-	brad := new(Human)
+func main7() {
+	jerry := &Humanc{"Jerry", "building", "wife", "developer", "reading"}
+	tom := Humanc{"Tom", "building", "wife", "developer", "reading"}
+	brad := new(Humanc)
 	brad.Name = "Brad"
 
 	//using the dot, both a variable and its pointer could refer to the instance of the structure.
@@ -29,7 +29,7 @@ func main() {
 	fmt.Println(*jerry)
 }
 
-func (h *Human) boost() {
+func (h *Humanc) boost() {
 	fmt.Println(h)
 	h.Body = "boosting"
 }

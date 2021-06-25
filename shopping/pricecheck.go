@@ -1,7 +1,7 @@
 package shopping
 
 import (
-	"shopping/db"
+	"helloworld/shopping/db"
 )
 
 func PriceCheck(itemId int) (float64, bool) {
