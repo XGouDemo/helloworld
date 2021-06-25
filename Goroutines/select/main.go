@@ -29,8 +29,38 @@ func main() {
 
 	for {
 		randomNum := rand.Int31n(200)
-		c <- randomNum
+		select {
+		case c <- randomNum:
+			fmt.Println("sent to channel")
+		default:
+			fmt.Println("dropped")
+		}
 		//sending faster than what the processing
-		time.Sleep(time.Millisecond * 50)
+		/*
+			worker 1 got 59
+			sent to channel
+			worker 0 got 33
+			sent to channel
+			worker 2 got 43
+			sent to channel
+			worker 3 got 91
+			sent to channel
+			worker 4 got 2
+			dropped
+			dropped
+			dropped
+			dropped
+			dropped
+			dropped
+			dropped
+			dropped
+			dropped
+			dropped
+			sent to channel
+			worker 1 got 25
+			sent to channel
+			worker 0 got 151
+		*/
+		time.Sleep(time.Millisecond * 100)
 	}
 }
