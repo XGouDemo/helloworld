@@ -58,4 +58,8 @@ func main() {
 
 	fmt.Println(dummy.print())
 	fmt.Println(prettySmart.print())
+
+	main5()
+	main6()
+	main7()
 }
