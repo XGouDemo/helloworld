@@ -6,7 +6,7 @@ import (
 	"sort"
 )
 
-func main() {
+func main1() {
 	scores := make([]int, 10)
 	for i := 0; i < 10; i++ {
 		scores[i] = int(rand.Int31n(1000))

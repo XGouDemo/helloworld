@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func main() {
+func main3() {
 	haystack := "the spice must flow"
 
 	fmt.Println(haystack[5:])                     //pice must flow
